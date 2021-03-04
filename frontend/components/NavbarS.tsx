@@ -4,6 +4,7 @@ import * as color from '../theme/GlobalColor';
 
 // Nav Containers
 export const NavDiv = styled.div`
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +20,7 @@ export const NavItemDiv = styled.div`
 
 // Nav Logo
 export const NavLogo = styled.a`
+  z-index: 100;
   font-family: ${typeface.righteous};
   font-size: ${typeface.$mdfont};
   color: ${color.$black};
@@ -35,9 +37,15 @@ export const NavItem = styled.a`
   text-decoration: none;
   cursor: pointer;
 
-  margin-right: 5rem;
+  margin-right: 4rem;
 
   user-select: none;
+
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    color: ${color.$gray};
+  }
 `;
 
 // Nav Hamburgers

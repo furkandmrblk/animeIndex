@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as typeface from '../../theme/GlobalFont';
 import * as color from '../../theme/GlobalColor';
 
-export const Button = styled.a`
+export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,7 @@ export const Button = styled.a`
   font-size: ${typeface.$smfont};
   text-align: center;
 
+  outline: none;
   border: none;
   border-radius: 2px;
   text-decoration: none;

@@ -1,8 +1,14 @@
+import React, { useEffect } from 'react';
 import Head from 'next/head';
-import { About } from '../components/About';
-import { Hero } from '../components/Hero';
+import { Login } from '../components/Login';
+import { useRouter } from 'next/router';
+import cookie from 'cookie';
 
-export default function Home() {
+export default function SignIn() {
+  const router = useRouter();
+
+  useEffect(() => {});
+
   return (
     <>
       <Head>
@@ -16,10 +22,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div>
-        <Hero />
-        <About />
-      </div>
+      <Login />
     </>
   );
 }

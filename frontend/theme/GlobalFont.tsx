@@ -17,4 +17,12 @@ export const $semiBold = 600;
 // Font Sizes
 export const $lgfont = '7.5rem';
 export const $mdfont = '2rem';
-export const $smfont = '1.5rem';
+export const $smfont = '1.2rem';
+
+// Font Sizes Card Hero
+export const $herocardlg = '1rem';
+export const $herocardmd = '0.675rem';
+export const $herocardsm = '0.45rem';
+
+// Font Size Paragraph
+export const $paragraph = '0.875rem';

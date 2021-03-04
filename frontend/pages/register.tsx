@@ -1,8 +1,19 @@
+import React, { useEffect } from 'react';
 import Head from 'next/head';
-import { About } from '../components/About';
-import { Hero } from '../components/Hero';
+import { Registration } from '../components/Registration';
+import { useRouter } from 'next/router';
 
-export default function Home() {
+export default function Register() {
+  const router = useRouter();
+
+  // useEffect(() => {
+  //   if ((document.cookie = 'token') === null) {
+  //     console.log('User not logged in');
+  //   } else {
+  //     router.push('/');
+  //   }
+  // });
+
   return (
     <>
       <Head>
@@ -17,8 +28,7 @@ export default function Home() {
         />
       </Head>
       <div>
-        <Hero />
-        <About />
+        <Registration />
       </div>
     </>
   );
